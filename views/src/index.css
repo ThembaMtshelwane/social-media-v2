@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0f263e;
+  color: #e8e6e2;
+}
+
+button {
+  @apply px-4 py-2 rounded-full font-semibold;
+}
+
+input,
+textarea {
+  @apply border py-2 px-4 text-lg bg-primary w-full;
+}
