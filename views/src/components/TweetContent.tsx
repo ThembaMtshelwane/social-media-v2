@@ -31,8 +31,6 @@ const TweetContent: React.FC<TweetProps> = ({ tweet }) => {
     }
     setLikesToggle((prev) => !prev);
   };
-  console.log("TweetContent tweet caption:", tweet.caption);
-  console.log("TweetContent tweet id:", tweet._id);
 
   return (
     <div className=" p-5 rounded-lg border border-secondary ">

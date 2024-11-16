@@ -7,7 +7,7 @@ import { CaptionTextarea, FileInput, ImagePreviews } from "./TweetElements";
 
 const CreateTweet: React.FC<{
   parentTweetId?: string;
-}> = ({ parentTweetId = "" }) => {
+}> = ({ parentTweetId }) => {
   const [images, setImages] = useState<string[]>([]);
   const [caption, setCaption] = useState("");
   const { createTweet, updateTweet } = useTweet();

@@ -52,7 +52,7 @@ export const useTweet = create<TweetStore>((set, get) => ({
     try {
       const res = await axios.get("/api/tweets");
       const data = res.data;
-      set({ tweets: data.data as Tweet[] });
+      set({ tweets: data.data });
     } catch (error) {
       console.error(error);
     }
